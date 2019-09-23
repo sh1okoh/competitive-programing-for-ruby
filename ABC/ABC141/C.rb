@@ -12,5 +12,4 @@ def solve()
     puts res[i] > 0 ? "Yes" : "No"
   end
 end
-
 solve()
