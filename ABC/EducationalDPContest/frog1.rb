@@ -1,3 +1,5 @@
+# 問題: https://atcoder.jp/contests/dp/tasks/dp_a
+
 def solve()
   n = gets.to_i
   h = gets.split.map!(&:to_i)

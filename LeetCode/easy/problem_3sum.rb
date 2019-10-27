@@ -1,6 +1,4 @@
-# @param {Integer[]} nums
-# @param {Integer} target
-# @return {Integer[]}
+# 問題: https://leetcode.com/problems/two-sum/
 def two_sum(nums, target)
   (0..nums.length - 1).each do |i|
     (i+1..nums.length - 1).each do |j|

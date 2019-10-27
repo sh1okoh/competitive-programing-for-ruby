@@ -1,3 +1,5 @@
+# 問題: https://leetcode.com/problems/reverse-integer/
+
 def reverse(x)
   max_integer = 2147483647
   minimum_integer = -2147483647
