@@ -3,17 +3,18 @@ def solve
   s = gets.split('')
   s.pop
   cnt = 0
-  (0..n).each do |o|
-    (1..n).each do |p|
-      next if s[o] == s[p]
+  x = s.count('R') * s.count('G') * s.count('B')
 
-      (2..n).each do |q|
-        if s[o] != s[p] && s[o] != s[q] && s[p] != s[q] && ((p+1) * 2) - (o + 1) - (q + 1) > 0
-          cnt += 1
-        end
-      end
+  (0..(n - 1)).each do |i|
+    (i + 1..(n - 1)).each do |j|
+      k = 2 * j - i
+      next if k > n - 1
+
+      next unless s[i] != s[j] && s[i] != s[k] && s[j] != s[k]
+
+      cnt += 1 if j - i == k - j
     end
   end
-  print cnt
+  print x - cnt
 end
 solve
