@@ -1,1 +1,1 @@
-# competitive-programing-for-ruby
+# competitive-programing
