@@ -7,7 +7,12 @@ def cumulative_sum
     cumulative_arr.push(cumulative_arr[i] + arr[i])
   end
 
-  p cumulative_arr
+  ans = 0
+  (1..(cumulative_arr.length - 1)).each do |o|
+    ans = [ans, cumulative_arr[o] - ans].max if o % 3 == 0
+  end
+  
+  print ans
 end
 
 cumulative_sum
