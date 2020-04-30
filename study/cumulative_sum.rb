@@ -11,7 +11,7 @@ def cumulative_sum
   (1..(cumulative_arr.length - 1)).each do |o|
     ans = [ans, cumulative_arr[o] - ans].max if o % 3 == 0
   end
-  
+
   print ans
 end
 
